@@ -28,7 +28,7 @@ jobs:
     - name: update secrets #更新token到secret
       env: 
         #github的账号信息
-        GH_TOKEN: ${{ secrets.GH_TOKEN }} 
+        GH_TOKEN: ${{ github.token }} 
         GH_REPO: ${{ github.repository }}
         #以下是微软的账号信息（修改以下，类推复制增加）
         APP_NUM: ${{ secrets.APP_NUM }} 
